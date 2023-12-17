@@ -1,0 +1,10 @@
+R=1;
+c=1e-6;
+stoptime=10;
+maxsize=1e-3;
+model=gcs;
+res=sim(model);
+plot(res.logsout.get("Vc").Values);
+title("RC circiut");
+xlabel("time");
+ylabel("Vc");
